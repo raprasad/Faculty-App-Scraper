@@ -1,17 +1,13 @@
-## Faculty-App-Scraper
+#----------------------------------
+Purpose: Download PDF-format Graduate Student applications from GCAST 
+#----------------------------------
 
-Fast/cheap way to scrape PDF docs off of an older website.
-
-----
-##Purpose: Download PDF-format Graduate Student applications from GCAST 
-----
-
-#### Tools: 
+Tools: 
     - python 2.7
     - selenium: http://www.seleniumhq.org/
     - beautiful soup: http://www.crummy.com/software/BeautifulSoup/
     
-#### Process:
+Process:
     - Use Selenium to drive Firefox and open the GCAST page, pausing for entry of HUID
     - Navigate to the list of applications
     - "Click" on each application to downloading the PDF file
@@ -19,9 +15,9 @@ Fast/cheap way to scrape PDF docs off of an older website.
         - In memory, store a python dict { PDF file name : applicant name } 
     - Use the python dict to rename the PDF files to the applicant names (lname_fname)
     
-#### Usage:
+Usage:
     - Edit gcast_scraper.py, fill in attributes at the top
     - python gcast_scraper.py
 
-#### Notes:
+Notes:
     - works as of 11/26/2013
